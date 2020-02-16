@@ -22,7 +22,7 @@ def linear_search(arr, x):
 def binary_search(sortedArr, x):
     low = 0
     high = len(sortedArr) - 1
-    
+
     while low <= high:
         mid = (low + high) // 2
         if sortedArr[mid] > x:
@@ -38,7 +38,7 @@ test_arr = [1, 2, 3, 4, 5, 6, 7]
 test_arr2 = [1, 2, 3, 4, 5, 6, 7, 8]
 
 
-print(binary_search([1, 2, 3, 4, 5, 6, 7], 7))
+print(binary_search([1, 2, 3, 4, 5, 6, 7], 99))
 
 
 '''
