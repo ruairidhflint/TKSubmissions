@@ -20,33 +20,37 @@ def linear_search(arr, x):
 
 
 def binary_search(sortedArr, x):
-    progress_arr = sortedArr
-    current_index = (len(progress_arr) - 1) // 2
+    high = len(sortedArr) - 1
+    low = 0
+    middle = (len(sortedArr) - 1) // 2
 
-    while(progress_arr[current_index] != x):
-        if progress_arr[current_index] == x:
-            return current_index  # works
+    while sortedArr[middle] != x:
+        if sortedArr[middle] == x:
+            print(high)
+            print(low)
+            print(middle)
+            return sortedArr[middle]
 
-        elif progress_arr[current_index] > x:
-            progress_arr = sortedArr[:current_index]
-            current_index = math.ceil(current_index/2)
-        else:
-            progress_arr = sortedArr[current_index:]
-            current_index = math.ceil(current_index/2)
+        elif sortedArr[middle] > x:
+            high = middle
+            middle = middle // 2
 
-    return progress_arr[current_index] - 1
+        elif sortedArr[middle] < x:
+            high = len()
+            middle = middle // 2
+            print(high)
+            print(low)
+            print(middle)
+            return "Middle value is smaller"
+
+    return sortedArr[middle] - 1
 
 
-'''
-
-'''
-test_arr = [1, 2, 3, 4, 5, 6,
-            7]  # I want index 3 - length is 7. So 7/3 = 3.5 (round down) or length - 1 / 2
-# If I do length - 1 /2 it equals 3.5 so round down
+test_arr = [1, 2, 3, 4, 5, 6, 7]
 test_arr2 = [1, 2, 3, 4, 5, 6, 7, 8]
 
 
-print(binary_search([1, 2, 3, 4, 5, 6, 7], 6))
+print(binary_search([1, 2, 3, 4, 5, 6, 7], 3))
 
 
 '''
