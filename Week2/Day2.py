@@ -44,6 +44,7 @@ print(recursive_search_two([1, 2, 3, 4, 5, 6, 7, 8], 50))
 '''
 
 '''
+ What will the contents of the array below be after each pass of the Merge Sort algorithm? 
 
     39 51 7 14 3 86
 
@@ -54,5 +55,15 @@ print(recursive_search_two([1, 2, 3, 4, 5, 6, 7, 8], 50))
 7  39  51     3  14  68
 3   7   14   39   51   68
 
+'''
 
 '''
+What will the contents of the array below be after each pass of the Quick Sort algorithm? (assume the first element is chosen as the pivot)
+
+24 44 12 99 3 56
+3 12 24 44 99 56
+3 12 24 44 99 56
+3 12 24 44 99 56
+3 12 24 44 56 99
+'''
+
