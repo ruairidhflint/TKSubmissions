@@ -1,9 +1,6 @@
 # Try writing a Python function to perform a linear search on a set of data.
 
 
-import math
-
-
 def linear_search(arr, x):
     answer = 'No matches'
     for index, item in enumerate(arr):
@@ -33,12 +30,10 @@ def binary_search(sortedArr, x):
             return mid_value
     return "Does not exist in list"
 
-
-test_arr = [1, 2, 3, 4, 5, 6, 7]
-test_arr2 = [1, 2, 3, 4, 5, 6, 7, 8]
-
-
 print(binary_search([1, 2, 3, 4, 5, 6, 7], 99))
+
+# Can you rewrite the above function so that it uses recursion?
+
 
 
 '''
