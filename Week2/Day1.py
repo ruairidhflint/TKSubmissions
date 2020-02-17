@@ -20,17 +20,17 @@ def linear_search(arr, x):
 
 
 def binary_search(sortedArr, x):
-    low = 0
-    high = len(sortedArr) - 1
+    low_value = 0
+    high_value = len(sortedArr) - 1
 
-    while low <= high:
-        mid = (low + high) // 2
-        if sortedArr[mid] > x:
-            high = mid - 1
-        elif sortedArr[mid] < x:
-            low = mid + 1
+    while low_value <= high_value:
+        mid_value = (low_value + high_value) // 2
+        if sortedArr[mid_value] > x:
+            high_value = mid_value - 1
+        elif sortedArr[mid_value] < x:
+            low_value = mid_value + 1
         else:
-            return mid
+            return mid_value
     return "Does not exist in list"
 
 
